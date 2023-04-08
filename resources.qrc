@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/icon.png</file>
+        <file>model/deploy.prototxt</file>
+        <file>model/hed_pretrained_bsds.caffemodel</file>
+    </qresource>
+</RCC>
