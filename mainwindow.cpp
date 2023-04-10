@@ -41,7 +41,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_actionOpen_file_triggered()
 {
-    QString filename = QFileDialog::getOpenFileName(this, "Open file", QDir::homePath());
+    QString filename = QFileDialog::getOpenFileName(this, "Open file", QDir::homePath(), "Images (*.jpg *.png *.jpeg *gif)");
     if (filename.isNull()) {
         return;
     }
