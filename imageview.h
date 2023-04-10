@@ -2,18 +2,20 @@
 #define IMAGEVIEW_H
 
 #include <QGraphicsView>
+#include <QWheelEvent>
 
-class ImageView : public QGraphicsView
-{
+class ImageView : public QGraphicsView {
     Q_OBJECT
 
 public:
-    ImageView(QWidget *parent = nullptr);
+    ImageView(QWidget* parent = nullptr);
     void zoomIn();
     void zoomOut();
     void resetZoomInCount();
+
 protected:
-    virtual void wheelEvent(QWheelEvent *event);
+    virtual void wheelEvent(QWheelEvent* event);
+
 private:
     const double SCALE_FACTOR = 1.15;
     int zoomInCount = 0;

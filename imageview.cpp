@@ -1,7 +1,5 @@
 #include "imageview.h"
 
-#include <QWheelEvent>
-
 ImageView::ImageView(QWidget* parent)
     : QGraphicsView(parent)
 {
