@@ -30,11 +30,13 @@ Supported features:
 1. Clone the repository
 2. Open the project in Qt Creator (double click on `OpenCVImageViewer.pro`)
 3. Define the system variable `OPENCV_SDK_DIR` with the path to `[OpenCVBuildDir/install]`. Example (for my PC): `OPENCV_SDK_DIR = "C:\opencv-build\install"`
-4. Change file names of the libs in the `.pro` file if you use a different version of OpenCV (4.7.0 used), according to this pattern:
-LIBS += -L$$(OPENCV_SDK_DIR)/x64/mingw/lib
--lopencv_core[xyz]
--lopencv_imgproc[xyz]
--lopencv_dnn[xyz]
+4. Change file names of the libs in the `.pro` file if you use a different version of OpenCV (4.7.0 used), according to this pattern:  
+```
+LIBS += -L$$(OPENCV_SDK_DIR)/x64/mingw/lib \
+-lopencv_core[xyz] \
+-lopencv_imgproc[xyz] \
+-lopencv_dnn[xyz]  
+```
 `xyz` are the numbers of the version (ex. version x.y.z = 4.7.0)
 5. Add OpenCV binaries to the Path environment variable. Example path to binaries: `C:\opencv-build\install\x64\mingw\bin`
 6. Qt Creator restart is sometimes needed for reloading system variables.
