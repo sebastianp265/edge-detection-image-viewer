@@ -12,6 +12,15 @@ Supported features:
 - Applying different combinations of image processing algorithms (it's recommended to blur an image or worsen its quality for better Canny algorithm results)
 - Saving processed image to a file
 
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/90553150/230987466-980042a7-d640-44f5-b5b2-c6b89f657925.jpg" width="30%">
+    <img src="https://user-images.githubusercontent.com/90553150/230987322-8112fd9f-d5c0-4b4a-b98d-939a21222b7b.png" width="30%">
+    <img src="https://user-images.githubusercontent.com/90553150/230987416-cb6a4585-54bb-4fd5-9db3-946bc0682b2e.png" width="30%">
+</p>
+<p align="center">
+  <em>Left: Before | Middle: After - Canny + quality decrease | Right: After - Holistically-Nested Edge Detection (HED)</em>
+</p>
+
 ## How to run (Windows x64 only)
 
 1. Download binaries from the release section and run `OpenCVImageViewer.exe`.
